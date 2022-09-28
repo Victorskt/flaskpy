@@ -1,0 +1,173 @@
+
+
+body {
+    background-color:  rgb(66, 41, 41);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 0px auto;
+    box-shadow: 0px 0px 7px #000;
+    width: 700px;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.75rem;
+    margin-top: 0;
+    font-weight: 800;
+    line-height: 1.2;
+    padding: 10px;
+    background-color: #000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid #000;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0em;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+
+.expression-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+#expression {
+    width: 500px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #000;
+    background-clip: padding-box;
+    border: 1px solid orange;
+    appearance: none;
+    margin: 0;
+    border-top-left-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+}
+#expression:focus {
+    outline: none;
+}
+#mensage {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    color:#f00;
+    margin-bottom: 10px;
+}
+label {
+    padding: 0.375rem 0.75rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #222;
+    appearance: none;
+    margin: 0;
+    border-top-right-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+    background-color: #000;
+    transition: background-color 0.3s;
+    user-select: none;
+}
+label:hover {
+    cursor: pointer;
+    background-color: #666;
+}
+label:active {
+    background-color: #222;
+}
+
+
+.equal-signal {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+#equal-button {
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 7px;
+    padding: 10px 70px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    transition: background-color 0.3s;
+    user-select: none;
+}
+#equal-button:hover {
+    cursor: pointer;
+    background-color: orange;
+}
+#equal-button:active {
+    background-color: orange;
+}
+
+
+
+h5 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    background-color: black;
+    padding: 10px;
+    border-top: 1px solid black;
+}
+.result {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    padding: 0px 50px 15px 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#binnary {
+    color: #fff;
+    font-size: 25px;
+    max-width: 525px;
+    overflow: hidden;
+}
+
+
+
+.copy-btn {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    transition: color 0.3s;
+    user-select: none;
+    margin-left: 15px;
+}
+.copy-btn:hover {
+    cursor: pointer;
+    color: #fff;
+}
+.copy-btn:active {
+    color: black;
+}

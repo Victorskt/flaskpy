@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(66, 41, 41);
+}
+
+
+.container {
+    align-items: center;
+}
+
+main {
+    margin-top: 15px;
+    padding: 10px;
+    box-shadow: 0px 0px 7px #000;
+    border-radius: 15px;
+    border-top: 15px solid black;
+    border-radius: 15px solid black;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.logo img {
+    width: 170px;
+}
+
+.teti-info {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.teti-info p {
+    margin: 0px;
+}
+.teti-info p span {
+    margin-right: 15px;
+}
+
+
+.week-desc {
+    border-right: 2px solid #0b63e4;
+    width: 145px;
+}
+.week-desc h5 {
+    margin-bottom: 5px !important;
+}
+.week-date {
+    font-size: 12px;
+}
+.week p {
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/css/list.css">
+    </head>
+
+    <body>
+        <main>
+            <h3> Cadastro</h3>
+
+            <form action="/add-name" method="POST">
+
+                <div class="mb-3">
+                    <label for="Name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="Name" name="Name" autofocus placeholder="Insira seu Nome" required>
+                </div>
+
+                <div class="btn-area">
+                    <a href="/list" class="btn-primary">Restart</a>
+                    <button type="submit" class="btn-primary">Enviar</button>
+                </div>
+            </form>
+
+            <ol type="1">
+                {% for name in name_list %}
+                    <li>{{ name }}</li>
+                {% endfor %}
+            </ol>
+        </main>
+       
+    </body>
+</html>

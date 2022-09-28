@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../static/css/galeria.css">
+        <title>TETI</title>
+    </head>
+    <body>
+
+        <section id="controls">
+            <div class="btn-area">
+                <a href="/galeria" class="btn-danger">Limpar</a>
+                <form action="/galeria" method="post" enctype="multipart/form-data">
+                    <div class="btn-set">
+                        <input type="file" class="form-control" name="input-file-image">
+                        <button type="submit" class="btn-success">Importar</button>
+                    </div>
+                </form>
+                {% if zip_file_exists %}
+                <a class="btn btn-primary" type="button" download href="../../static/images/galeria/imagespy.zip">Download</a>
+                {% else %}
+                <button class="btn-primary" type="button">Download</button>
+                {% endif %}
+            </div>
+        </section>
+
+
+        {% if images_list %}
+        <section id="images">
+            {% for nick_img in images_list %}
+            <img src="../../static/images/galeria/{{ nick_img }}">
+            {% endfor %}
+        </section>
+        {% endif %}
+    </body>
+</html>

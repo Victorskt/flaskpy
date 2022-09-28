@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../static/css/transferenciapx.css">
+        <title>TETI</title>
+    </head>
+    <body>
+        <header>
+            <div class="btn-area">
+                <a href="/transferencia" class="btn-primary">Reiniciar</a>
+                <form action="/transferencia" method="post" enctype="multipart/form-data">
+                    <div class="btn-set">
+                        <input type="file" class="form-control" name="input-file-image">
+                        <button type="submit" class="btn-success">Importar</button>
+                    </div>
+                </form>
+            </div>
+        </header>
+
+        {% if image %}
+        <main>
+            {% for row in image %}
+            <div class="image-row">
+                {% for pixel in row %}
+                    <div class="image-pixel" style="background-color: {{ pixel }};"></div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </main>
+        {% endif %}
+    </body>
+</html>

@@ -1,0 +1,59 @@
+body {
+     background-color: rgb(66, 41, 41);
+}
+
+main {
+
+    flex-direction: column;
+    margin: 50px auto 0px auto;
+    box-shadow: 0px 0px 7px #000;
+    width: 500px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border-top: 10px solid gray;
+    border-bottom: 10px solid gray;
+}
+
+
+.form {
+    margin-top: 40px;
+}
+
+.btn-area button{
+    display: inline-block;
+    padding: 3px 15px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+    
+    
+}
+.btn-area button{
+    padding-left: 20px;
+    padding-top: 8px;
+    margin-top: 27px;
+}
+
+
+.btn-area a{
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 21px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.ol {
+    text-align: center;
+    margin: 40px 10px 0px 10px !important;
+    font-size: 20px;
+}

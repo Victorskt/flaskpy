@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel= "stylesheet" type= "text/css" href= "../static/css/calculator.css">
+        <title>TETI</title>
+    </head>
+    <body>
+
+        <main>
+            <h3>Calculadora</h3>
+            <form action="/calculator" method="POST">
+                <div class="expression-input">
+                    <input type="text" id="expression" name="expression" aria-describedby="mensage" autofocus required>
+                    {% if mensage %}
+                        <div id="mensage" class="expression-text">{{ mensage }}</div>
+                    {% endif %}
+                </div>
+                <table>
+                    <tr>
+                        <td onclick="insert('7')">7</td>
+                        <td onclick="insert('8')">8</td>
+                        <td onclick="insert('9')">9</td>
+                        <td onclick="insert('÷')">÷</td>
+                    </tr>
+                    <tr>
+                        <td onclick="insert('4')">4</td>
+                        <td onclick="insert('5')">5</td>
+                        <td onclick="insert('6')">6</td>
+                        <td onclick="insert('𝗑')" id="mult-signal">𝗑</td>
+                    </tr>
+                    <tr>
+                        <td onclick="insert('1')">1</td>
+                        <td onclick="insert('2')">2</td>
+                        <td onclick="insert('3')">3</td>
+                        <td onclick="insert('-')">-</td>
+                    </tr>
+                    <tr>
+                        <td onclick="insert(',')">,</td>
+                        <td onclick="insert('0')">0</td>
+                        <td onclick="clean()">C</td>
+                        <td onclick="insert('+')">+</td>
+                    </tr>
+                </table>
+                <div class="equal-signal" role="group">
+                    <button type="submit" id="equal-button">=</button>
+                </div>
+            </form>
+            {% if result and binnary %}
+                <h5>Resultado</h5>
+                <div class="result">
+                    <span>{{ result }}</span>
+                    <span>{{ binnary }}</span>
+                </div>
+            {% endif %}
+        </main>
+        <script src="../static/js/calculator.js" type="text/javascript"></script>
+    </body>
+</html>
